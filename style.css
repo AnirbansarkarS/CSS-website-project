@@ -261,24 +261,29 @@ img{
     height: 150px;   
 
 }
-/* .container {
+.container {
     display: flex;
+    flex-direction:column;
     align-items: center;
     margin-top: 800px;
-    gap: px;
-    max-width: 9px;
-
-}  */
+    align-items: center;
+    justify-content: space-between; /* Positions elements at both ends */
+    width: 90%; /* Adjust container width */
+    max-width: px;
+    padding: 30px; /* Adds some spacing */
+ } 
+.image-container{
+    width:40%;
+    border:2px solid rgb(9, 199, 251);
+}
 .image-container {
-     display: flex;
+    
     position: relative;
-    margin-top: 850px;
-    margin-left: 1000px;
-    margin-bottom: 100px;
-    width: 300px;
-    height: 400px;
+    width: 40%; /* Same width as .am */
+    height: 620px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 60px;
+    
 }
 
 .image-container img {
@@ -304,12 +309,49 @@ img{
 .image-container:hover .default-img {
     opacity: 0; /* Fades out on hover */
 }
-.am{
-    color: #09d7f7;
-    display: flex;
-}
-.Contact{
-margin-top: 30px;
-margin-left: 1100px;
 
+    
+
+.Contact{
+ margin-top: 30px;
+ margin-bottom: 30px;
+
+
+}
+.insta{
+   
+   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s');
+   background-size:cover;
+   margin-left: 585px;
+   background-repeat: no-repeat;
+   width: 70px;
+   height:59px;
+
+}
+.git{
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png');
+    background-size:cover;
+    
+    width: 70px;
+    height: 59px;
+    
+}
+.link{
+    background-image:url('https://banner2.cleanpng.com/20180529/str/avpsm7w6e.webp');
+    background-size:cover;
+   
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 59px;
+
+}
+.am{
+    border: 3px solid rgb(255, 0, 115) ;
+    border-radius: 47px;
+    padding: 5px;
+    padding-right: 10px;
+    color: #33fffc;
+    text-align: center;
+    justify-content: center;
+    font-size: 120%;
 }

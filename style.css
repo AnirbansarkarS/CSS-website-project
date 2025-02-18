@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: black;
-    padding-top: 60px; /* Prevent content from being hidden behind navbar */
+    padding-top: 8vh; /* Prevent content from being hidden behind navbar */
 }
 
 nav {
@@ -15,11 +15,11 @@ nav {
     top: 0;
     left: 0;
     width: 100%;  /* Full width */
-    height: 60px;
+    height: 8vh;
     background: #EBD3F8;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 3vh;
     z-index: 100;
 }
 
@@ -27,7 +27,7 @@ nav img {
 
     max-width: 7%; /* Logo size */
     max-height: 100%;
-    margin-right: 20px;
+    margin-right: 2vh;
 }
 
 nav a {
@@ -37,7 +37,7 @@ nav a {
     font-weight: 500;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
     position: relative;
     transition: color 0.3s;
 }
@@ -49,27 +49,23 @@ nav a:hover {
 nav .indicator {
     position: absolute;
     bottom: 0;
-    left: 227px; /* Adjusted for logo */
-    width: 100px;
-    height:60px;
+    left: 31vh; /* Adjusted for logo */
+    width: 13vh;
+    height:8vh;
     background: linear-gradient(45deg, #AD49E1, #7A1CAC);
-    border-radius: 10px;
+    border-radius: 1.2vh;
     transition: 0.5s;
     z-index: -1;
 }
 
 /* Adjust hover effect positions */
-nav a:nth-child(2):hover ~ .indicator { left: 227px; }
-nav a:nth-child(3):hover ~ .indicator { left: 501px; }
-nav a:nth-child(4):hover ~ .indicator { left: 769px; }
-nav a:nth-child(5):hover ~ .indicator { left: 1040px; }
-nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
+nav a:nth-child(2):hover ~ .indicator { left: 31vh; }
+nav a:nth-child(3):hover ~ .indicator { left: 68vh; }
+nav a:nth-child(4):hover ~ .indicator { left: 106vh; }
+nav a:nth-child(5):hover ~ .indicator { left: 143vh; }
+nav a:nth-child(6):hover ~ .indicator { left: 180vh; }
 
-.webim{
-    margin-left: 140px;
-     color: rgb(16, 203, 203);
-    
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -78,9 +74,9 @@ nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
 }
 
 .section {
-    margin-left: 120px;
-    width: 1270px;
-    height: 700px; /* Adjust height as needed */
+    margin-left: 16vh;
+    width: 175vh;
+    height: 85vh; /* Adjust height as needed */
     background-image: url('1bb39e0e-2d5c-4fbc-a2e7-72840602d788.webp'); /* Replace with your image */
     background-size: cover;
     background-position: center;
@@ -92,17 +88,16 @@ nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
 .black-box {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: white;
-    padding: 30px;
+    padding: 5vh;
+    margin-top: 30vh;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1.9vh;
 }
 
-
-
 .main{
-   margin-top: 920px;
+    margin-top: 110vh;
     transform: translate(-50%,-50%); 
-    perspective: 10000px;
+    perspective: 4000vh;
     display: flex;
     position: absolute;
     top: 50%;
@@ -110,9 +105,9 @@ nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
     transform: translate(-50%,-50%); 
 }
 .first,.second,.third,.fourth{
-    margin: 30px;
-    width:315px;
-    height: 500px;
+    margin: 2vh;
+    width:45vh;
+    height: 69vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
@@ -122,7 +117,7 @@ nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
 
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 2.9vh;
     backface-visibility: hidden;
 }
 .front1{
@@ -142,7 +137,7 @@ nav a:nth-child(6):hover ~ .indicator { left: 1316px; }
     font-style: oblique;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    border-radius: 30px;
+    border-radius: 3vh;
     justify-content: center;
     align-items: center;
     color: #030303;
@@ -235,36 +230,38 @@ img{
   
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    padding-top: 49px;
-    border-radius: 90px;
-    margin-top: 30px;
-    margin-left:510px;
-    width: 500px;
-    height: 150px;   
+    padding-top: 4vh;
+    border-radius: 8vh;
+    margin-top: 3vh;
+    margin-left:70vh;
+    width: 70vh;
+    height: 18vh;   
 
 }
 .container {
     display: flex;
     flex-direction:column;
     align-items: center;
-    margin-top: 800px;
+    margin-top: 90vh;
     align-items: center;
     justify-content: space-between; /* Positions elements at both ends */
     width: 90%; /* Adjust container width */
     max-width: px;
-    padding: 30px; /* Adds some spacing */
+    
+    padding: 4vh; /* Adds some spacing */
  } 
 .image-container{
+    margin-left: 17vh;
     width:40%;
-    border:2px solid rgb(9, 199, 251);
+    border:5px solid rgb(9, 199, 251);
 }
 .image-container {
     
     position: relative;
     width: 40%; /* Same width as .am */
-    height: 620px;
+    height: 80vh;
     overflow: hidden;
-    border-radius: 60px;
+    border-radius: 5vh;
     
 }
 
@@ -291,47 +288,40 @@ img{
 .image-container:hover .default-img {
     opacity: 0; /* Fades out on hover */
 }
-
-    
-
 .Contact{
- margin-top: 30px;
- margin-bottom: 30px;
-
-
+ margin-bottom: 3vh;
 }
 .insta{
    
    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s');
    background-size:cover;
-   margin-left: 585px;
+   margin-left: 90vh;
    background-repeat: no-repeat;
-   width: 70px;
-   height:59px;
+   width: 8vh;
+   height:8vh;
 
 }
 .git{
     background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png');
     background-size:cover;
-    
-    width: 70px;
-    height: 59px;
+    background-repeat: no-repeat;
+    width: 8vh;
+    height:8vh;
     
 }
 .link{
     background-image:url('https://banner2.cleanpng.com/20180529/str/avpsm7w6e.webp');
     background-size:cover;
-   
     background-repeat: no-repeat;
-    width: 70px;
-    height: 59px;
-
+    width: 8vh;
+    height:8vh;
 }
 .am{
+    margin-left: 17vh;
     border: 3px solid rgb(255, 0, 115) ;
-    border-radius: 47px;
-    padding: 5px;
-    padding-right: 10px;
+    border-radius: 5vh;
+    padding: 1vh;
+    padding-right: 2vh;
     color: #33fffc;
     text-align: center;
     justify-content: center;
